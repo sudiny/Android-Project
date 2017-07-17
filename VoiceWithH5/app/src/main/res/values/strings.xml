@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">VoiceWithH5</string>
+    <string name="SD_card_not_detected_the_function_of_voice_intercom_temporarily_cannot_use">未检测到SD卡，语音对讲的功能暂不可使用</string>
+</resources>

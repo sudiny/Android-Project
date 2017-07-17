@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88000000"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/newAudioRecord_tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <com.example.castledrv.voicewithh5.widget.WaveView
+            android:id="@+id/newAudioRecord_waveview_left"
+            android:layout_width="@dimen/view_90dp"
+            android:layout_height="@dimen/view_20dp" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="15dp" />
+
+        <com.example.castledrv.voicewithh5.widget.WaveView
+            android:id="@+id/newAudioRecord_waveview_right"
+            android:layout_width="@dimen/view_90dp"
+            android:layout_height="@dimen/view_20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/newAudioRecord_tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/x_newrecord_cancel"
+                android:gravity="center"
+                android:text="取消" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/newAudioRecord_ibtn_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/x_newrecord_start" />
+
+            <ImageView
+                android:id="@+id/newAudioRecord_ibtn_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/x_newrecord_play"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/newAudioRecord_ibtn_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/x_newrecord_stop"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/newAudioRecord_tv_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/x_newrecord_finish"
+                android:gravity="center"
+                android:text="完成" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/newAudioRecord_tv_noterecord"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:text="点击录音"
+        android:textSize="15dp" />
+</LinearLayout>
